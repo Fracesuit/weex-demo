@@ -8,6 +8,7 @@ const vueLoaderConfig = require('./vue-loader.conf');
 const vueWebTemp = helper.rootNode(config.templateDir);
 const hasPluginInstalled = fs.existsSync(helper.rootNode(config.pluginFilePath));
 const isWin = /^win/.test(process.platform);
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 const webEntry = {};
 const weexEntry = {};
 
